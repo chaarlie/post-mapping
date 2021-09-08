@@ -10,6 +10,9 @@ const useAddCommentStyles = makeStyles({
     root: {
         marginTop: '12px',
         width: '99%',
+    },
+    commentFields: {
+        flexDirection: 'column'
     }
 })
 
@@ -28,7 +31,7 @@ const AddComment = ({ newComment, setNewComment, handleCommentForm, postIndex })
                     onChange={e => setNewComment({ ...newComment, body: e.target.value })} rows={10}
                     className={addCommentStyles.root}>
                 </textarea>
-                <Grid container style={{ flexDirection: 'column' }}>
+                <Grid container className={addCommentStyles.commentFields}>
                     <TextField
                         value={newComment.name}
                         onChange={e => setNewComment({ ...newComment, name: e.target.value })}

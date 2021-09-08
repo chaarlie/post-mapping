@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 
 import CommentBox from './CommentBox'
 
-describe('Comment', () => {
+describe('CommentBox', () => {
     const comments = [
         { 
             name: 'Name 1', 

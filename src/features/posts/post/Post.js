@@ -16,7 +16,7 @@ import { fetchPosts } from '../postSlice'
 import { fetchComments, addComment } from '../../comments/commentsSlice'
 
 import PostRow from '../post-row/PostRow'
-import CommentBox from '../../comments/commet-box/CommentBox'
+import CommentBox from '../../comments/comment-box/CommentBox'
 import AddComment from '../../comments/add-comment/AddComment'
 
 const useTableHeadingStyle = makeStyles({
